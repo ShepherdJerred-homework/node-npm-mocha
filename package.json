@@ -1,0 +1,19 @@
+{
+  "name": "node-npm-mocha",
+  "version": "1.0.0",
+  "description": "Intro to node, NPM, and mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShepherdJerred-homework/node-npm-mocha.git"
+  },
+  "author": "Jerred Shepherd",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ShepherdJerred-homework/node-npm-mocha/issues"
+  },
+  "homepage": "https://github.com/ShepherdJerred-homework/node-npm-mocha#readme"
+}
