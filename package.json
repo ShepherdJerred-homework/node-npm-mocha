@@ -4,7 +4,7 @@
   "description": "Intro to node, NPM, and mocha",
   "main": "index.js",
   "scripts": {
-    "test": "semistandard && mocha"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
