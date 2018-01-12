@@ -29,7 +29,7 @@ function slice (object, properties) {
 }
 
 module.exports = {
-  repeat: repeat,
-  runningSum: runningSum,
-  slice: slice
+  repeat,
+  runningSum,
+  slice
 };
