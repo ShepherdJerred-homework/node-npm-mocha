@@ -1,0 +1,97 @@
+
+<!-- saved from url=(0061)https://cs.harding.edu/gfoust/classes/comp431/homework01.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./homework01_files/standard.css" type="text/css">
+    <title>Comp 431: Homework</title>
+    <!--<base target="_top">--><base href="." target="_top">
+    <script type="text/javascript" src="./homework01_files/shCore.js"></script><style></style>
+    <script type="text/javascript" src="./homework01_files/shBrushJScript.js"></script>
+    <script type="text/javascript">
+      SyntaxHighlighter.defaults.gutter = false;
+      SyntaxHighlighter.all();
+    </script>
+    <link type="text/css" rel="stylesheet" href="./homework01_files/shCore.css">
+    <link type="text/css" rel="stylesheet" href="./homework01_files/shThemeFoust.css">
+    <style>
+      .console { font-family: "Lucida Console",Monaco,monospace; }
+      .sqrt { text-decoration: overline; }
+      .blue { color: #0cc; }
+      .yellow { color: #990; }
+      ol ol li { list-style-type: lower-alpha; }
+    </style>
+  </head>
+  <body>
+    <ol class="spaced">
+      <li>
+        Create a Node project.
+        <ul>
+          <li>You should use “<code>npm</code> <code>init</code>” to create
+            your <code>package.json</code> file.</li>
+          <li>You should provide values for all entries except “git
+            repository” and “keywords”.</li>
+          <li>Your entry point should be <code>main.js</code>.</li>
+          <li>You should use <code>mocha</code> as your test command.</li>
+        </ul>
+      </li>
+      <li>Create a <code>main.js</code> file.  Your file should export the
+        following three functions:
+        <ol class="spaced">
+          <li>
+            A function named <code>repeat</code> that takes two parameters: a
+            string and a number.  It should create a string that consists of
+            the given string repeated the given number of times.  If the
+            number is less than 1 then just return the empty string.
+            <div><div id="highlighter_441051" class="syntaxhighlighter nogutter  jscript"><div class="toolbar"><span><a href="https://cs.harding.edu/gfoust/classes/comp431/homework01.html#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="jscript plain">repeat(</code><code class="jscript string">"howdy"</code><code class="jscript plain">, 3) == </code><code class="jscript string">"howdyhowdyhowdy"</code></div></div></td></tr></tbody></table></div></div>
+            Remember that the <code>+</code> operator can concatenate two
+            strings.
+            <div><div id="highlighter_44665" class="syntaxhighlighter nogutter  jscript"><div class="toolbar"><span><a href="https://cs.harding.edu/gfoust/classes/comp431/homework01.html#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="jscript string">"hi"</code> <code class="jscript plain">+ </code><code class="jscript string">"there"</code> <code class="jscript plain">== </code><code class="jscript string">"hithere"</code></div></div></td></tr></tbody></table></div></div>
+          </li>
+          <li>
+            A function named <code>runningSum</code> that takes one parameter:
+            an array of numbers.  It should return a <em>new</em> array of
+            numbers such that the <code>i</code>th element is the sum of the
+            first <code>i</code> numbers of the original array.
+            Do <em>not</em> modify the original array.
+            <div><div id="highlighter_550064" class="syntaxhighlighter nogutter  jscript"><div class="toolbar"><span><a href="https://cs.harding.edu/gfoust/classes/comp431/homework01.html#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="jscript plain">sum([ 2, 4, 5, 9 ]) == [ 2, 6, 11, 20 ]</code></div></div></td></tr></tbody></table></div></div>
+          </li>
+          <li>
+            A function named <code>slice</code> that takes two parameters: an
+            object and an array of strings.  It should return a <em>new</em>
+            object that is a copy of the given object except that it only
+            contains the properties contained in the given array of strings.
+            Do <em>not</em> modify the original array.
+            <div><div id="highlighter_68356" class="syntaxhighlighter nogutter  jscript"><div class="toolbar"><span><a href="https://cs.harding.edu/gfoust/classes/comp431/homework01.html#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="jscript keyword">let</code> <code class="jscript plain">o = { a: 3, b: 8, c: 14, d: 6, e: 21, f: 15, g: 2, h: 5 };</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="jscript plain">slice(o, [</code><code class="jscript string">"a"</code><code class="jscript plain">, </code><code class="jscript string">"f"</code><code class="jscript plain">, </code><code class="jscript string">"c"</code><code class="jscript plain">, </code><code class="jscript string">"x"</code><code class="jscript plain">, </code><code class="jscript string">"e"</code><code class="jscript plain">]) == { a: 3, f: 15, c: 14, e: 21 }</code></div></div></td></tr></tbody></table></div></div>
+            You might find it helpful to use the array's
+            built-in <code>indexOf</code> function.  It returns the first
+            index of the given element if it is in the array or -1 if it is
+            not in the array.
+            <div><div id="highlighter_444096" class="syntaxhighlighter nogutter  jscript"><div class="toolbar"><span><a href="https://cs.harding.edu/gfoust/classes/comp431/homework01.html#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="jscript plain">[ 10, 20, 30, 40, 30 ].indexOf(30) == 2;</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="jscript plain">[ 10, 20, 30, 40, 30 ].indexOf(50) == -1;</code></div></div></td></tr></tbody></table></div></div>
+          </li>
+        </ol>
+      </li>
+      <li>Create a <code>test.js</code> file.  Your file should contain tests
+        for the functions you wrote
+        <ul>
+          <li>Create a <code>describe</code> group for each function</li>
+          <li>You should have at least three tests for each funciton</li>
+          <li>Remember that your test cases should describe the behavior of
+            your functions:  what does it do?</li>
+          <li>Remember to test special cases:  what if the array is empty?
+            what if the number is negative?, what if none of the keys are in
+            the object?  etc.</li>
+        </ul>
+      </li>
+      <li>Once you have all your test cases working you should delete
+        your <code>node_modules</code> directory, zip up your package folder,
+        and submit it.
+        <p>
+          I should be able to unzip your project folder, run “<code>npm</code>
+          <code>install</code>”, then run
+          “<code>npm</code> <code>test</code>” to verify that your
+          program passes all its test cases.
+        </p>
+      </li>
+    </ol>
+  
+
+</body></html>
