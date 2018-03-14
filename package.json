@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ShepherdJerred-homework/node-npm-mocha.git"
+    "url": "git+https://github.com/ShepherdJerred-homework/node-practice.git"
   },
   "author": "Jerred Shepherd",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/ShepherdJerred-homework/node-npm-mocha/issues"
+    "url": "https://github.com/ShepherdJerred-homework/node-practice/issues"
   },
-  "homepage": "https://github.com/ShepherdJerred-homework/node-npm-mocha#readme",
+  "homepage": "https://github.com/ShepherdJerred-homework/node-practice#readme",
   "devDependencies": {
     "eslint": "^4.15.0",
     "mocha": "^4.1.0",
